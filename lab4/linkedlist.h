@@ -1,6 +1,5 @@
 #ifndef _LINK_LIST_H_
 #define _LINK_LIST_H_
-#define FAILURE (-1)
 
 typedef struct Node
 {
