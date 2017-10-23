@@ -21,7 +21,7 @@ int addNode(LinkedList *l, Node *n);
 
 int delNode(LinkedList *l, Node *n);
 
-Node *searchNode(LinkedList *l, char* key, int operation(Node *n, char* key));
+Node *searchNode(LinkedList *l, char *key, int operation(Node *n, char *key));
 
 Node *getHeadNode(LinkedList *l);
 

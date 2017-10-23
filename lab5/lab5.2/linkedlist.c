@@ -93,13 +93,17 @@ int delNode(LinkedList *l, Node *n)
     return -1;
 }
 
-Node *searchNode(LinkedList *l, char* key, int operation(Node *n, char* key)){
-    if(l==NULL&&operation==NULL){
+Node *searchNode(LinkedList *l, char *key, int operation(Node *n, char *key))
+{
+    if (l == NULL && operation == NULL)
+    {
         return NULL;
     }
-    Node *n=l->head;
-    while(n!=NULL){
-        if(operation(n, key)==0){
+    Node *n = l->head;
+    while (n != NULL)
+    {
+        if (operation(n, key) == 0)
+        {
             return n;
         }
         n = n->next;

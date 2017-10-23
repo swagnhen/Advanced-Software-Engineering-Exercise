@@ -12,6 +12,8 @@ typedef struct CmdNode
 
 int initMenuData(LinkedList **l);
 
+int searchOperation(Node *n, char *cmd);
+
 CmdNode *findCmd(LinkedList *head, char *cmd);
 
 void cmdAdd();

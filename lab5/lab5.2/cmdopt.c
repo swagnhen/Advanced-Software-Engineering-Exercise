@@ -55,19 +55,19 @@ int initMenuData(LinkedList **l)
     return 0;
 }
 
-int searchOperation(Node * n, char* cmd)
+int searchOperation(Node *n, char *cmd)
 {
-    CmdNode * p = (CmdNode *)n;
-    if(strcmp(p->cmd, cmd) == 0)
+    CmdNode *p = (CmdNode *)n;
+    if (strcmp(p->cmd, cmd) == 0)
     {
-        return  0;  
+        return 0;
     }
-    return -1;	       
+    return -1;
 }
 
 CmdNode *findCmd(LinkedList *l, char *cmd)
 {
-    return (CmdNode*)searchNode(l, cmd, searchOperation);
+    return (CmdNode *)searchNode(l, cmd, searchOperation);
 }
 
 void cmdAdd()
