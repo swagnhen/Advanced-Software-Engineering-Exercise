@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int test(){
+int test(int argc, char *argv[]){
     printf(">>>Test success\n");
     return 0;
 }
